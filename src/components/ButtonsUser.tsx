@@ -23,7 +23,7 @@ function ButtonsUser() {
     return (
         <>
             {
-                userInfo ? <div className='flex order-2  gap-2 items-center justify-end pr-4 my-4 md:my-0 lg:gap-4 tv:pr-8 '>
+                userInfo ? <div className='flex max-md:order-3  gap-2 items-center justify-end pr-4 my-4 md:my-0 lg:gap-4 tv:pr-8 '>
                     <button
                         className=' bg-white text-black h-9 font-sans px-6 py-2 w-auto flex items-center rounded-full font-semibold hover:opacity-90 text-[0.8rem] lg:text-base tv:h-14 tv:px-10 lg:w-auto lg:py-1 xl:py-2 tv:text-xl md:w-20 justify-center'
                         onClick={handleLogout}
@@ -37,7 +37,7 @@ function ButtonsUser() {
                     <div className=' flex gap-4 items-center justify-end pr-4 my-4 md:my-0'>
                         <div
                             className=' bg-white h-9 font-sans px-6 py-2 w-auto flex items-center justify-center rounded-full hover:opacity-90 cursor-pointer'
-                            onClick={() => navigate('./list')}
+                            onClick={() => navigate('/list')}
 
                         >
                             <p className=" text-black text-base font-sans font-semibold">Log in</p>

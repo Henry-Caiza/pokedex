@@ -8,7 +8,7 @@ import Navbar from "./sections/Navbar"
 import { useEffect } from 'react'
 import toast, { Toaster } from 'react-hot-toast'
 
-import { BrowserRouter, Route, Routes, Navigate, useLocation } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from "./app/hooks"
 import { clearToasts, setUserStatus } from "./app/slices/AppSlice"
 import { onAuthStateChanged } from "firebase/auth"
@@ -59,7 +59,7 @@ function App() {
       {/* <Background /> */}
       <BrowserRouter>
 
-        <div className={` app z-10 bg-gradient-to-b from-primary from-20% md:from-50% to-secondary h-[100vh] w-full  md:h-[100vh] md:w-[100vw] backdrop-blur-xl border border-[rgba(23,20,20,0.37)] grid grid-rows-[auto_auto] md:grid md:grid-rows-[auto_auto] md:grid-cols-1 `}>
+        <div className="app z-10 bg-gradient-to-b from-primary from-20% md:from-50% to-secondary h-[100vh] w-full  md:h-[100vh] md:w-[100vw] backdrop-blur-xl border border-[rgba(23,20,20,0.37)] grid grid-rows-[auto_auto] md:grid md:grid-rows-[auto_auto] md:grid-cols-1 ">
           <Navbar />
           <Routes>
             <Route element={<Search />} path="/search" />

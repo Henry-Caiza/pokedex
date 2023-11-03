@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import { pokemonTypes } from "../utils/getPokemonTypes";
 import { useAppDispatch } from "../app/hooks";
 import { addPokemonToList } from "../app/reducers/addPokemonToList";

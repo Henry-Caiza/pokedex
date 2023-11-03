@@ -1,11 +1,9 @@
-import { BsFillArrowLeftCircleFill } from 'react-icons/bs'
+
 import imgBallBg from '../assets/pokebg.png'
-import ButtonsUser from './ButtonsUser'
-import { useNavigate } from 'react-router-dom'
+
 
 
 function PokemonContainer({ image }: { image: string }) {
-    const navigate = useNavigate()
     return (
         <div className="w-full h-full flex justify-center relative ">
 
