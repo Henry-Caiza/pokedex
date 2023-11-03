@@ -191,7 +191,7 @@ function Pokemon() {
         }
     }, [params, getPokemonInfo]);
 
-    return <div className=" grid grid-rows-[92vh_8vh] md:grid-rows-[86vh_10vh] lg:grid-rows-[82vh_10vh] desktop:grid-rows-[80vh_10vh] grid-cols-1 h-full w-full relative  max-md:row-star-1 max-md:row-end-1">
+    return <div className=" grid grid-rows-[92vh_8vh] md:grid-rows-[86vh_10vh] lg:grid-rows-[82vh_10vh] xl:grid-rows-[80vh_10vh] grid-cols-1 h-full w-full relative  max-md:row-star-1 max-md:row-end-1">
 
         {
 

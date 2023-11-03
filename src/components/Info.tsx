@@ -47,7 +47,7 @@ export default function Info({
                 <h1 className="name uppercase text-base mb-4 text-center md:text-left">{data?.name}</h1>
                 <div className='flex md:hidden w-full justify-between absolute top-2 left-0 px-2 z-50'>
                     <button
-                        className=' z-50 '
+                        className=' z-50 rounded-full bg-primary/40 '
                         onClick={() => navigate(-1)}
                     >
                         <BsFillArrowLeftCircleFill size={30} className='text-white/80' />
@@ -62,7 +62,7 @@ export default function Info({
                 <h3 className="hidden md:block text-[.6rem] capitalize mb-2">TYPE: {data?.types.join(" - ")}</h3>
                 <h3 className="text-[.6rem]">EVOLUTION: {data?.evolutionLevel}</h3>
                 <button
-                    className="text-[.5rem] absolute right-4 -bottom-6 p-2 bg-primary border-[0.1rem] border-[var(--accent-color)] rounded-r-full cursor-pointer z-50 "
+                    className="text-[.5rem] absolute right-4 -bottom-6 p-2 bg-primary border-[0.1rem] border-[var(--accent-color)] rounded-r-full cursor-pointer z-50 md:hover:bg-slate-800"
                     onClick={() => dispatch(setPokemonTab(pokemonTabs.evolution))}>
                     Evolutions
                 </button>
@@ -89,7 +89,7 @@ export default function Info({
                     </div>
             }
 
-            <div className="stats absolute max-md:left-2.5 top-[calc(60%-3rem)] h-28 md:h-[24%] lg:h-[34%] md:top-4 max-lg:right-0 lg:top-[calc(60%-3rem)]  lg:bottom-32 text-[0.4rem] md:text-[0.5rem] lg:text-[0.6rem] z-20 bg-slate-400/10 p-2 md:p-4 rounded-xl border-[1px] border-white/5 w-[95%] md:w-auto ">
+            <div className="stats absolute max-md:left-2 top-[calc(60%-3rem)] h-28 md:h-[24%] lg:h-[34%] md:top-4 max-lg:right-0 lg:top-[calc(60%-3rem)]  lg:bottom-32 text-[0.4rem] md:text-[0.5rem] lg:text-[0.6rem] z-20 bg-slate-400/10 p-2 md:p-4 rounded-xl border-[1px] border-white/5 w-[95%] md:w-auto ">
                 <ul className="flex flex-col gap-2 w-full h-full md:gap-3 lg:gap-4  justify-center">
                     {data?.stats?.map((stat: pokemonStatsType) => {
                         return (
@@ -112,8 +112,8 @@ export default function Info({
             <div className="battle-stats absolute max-md:top-[calc(60%+4rem)] max-lg:top-[calc(52%+3.5rem)] lg:bottom-12 right-0 md:right-2 lg:right-4 text-[0.35rem] md:text-[0.5rem] p-2 md:p-4 lg:p-6 w-full md:w-[98%] lg:w-[30%] z-20 leading-loose bg-transparent  md:bg-slate-400/10 md:shadow-[0px_0px_6px_2px] md:shadow-[var(--accent-color)] md:before:h-1  md:before:w-36 md:before:contents-[''] md:before:bg-[var(--accent-color)] md:before:absolute md:before:top-0 md:before:right-0">
                 {
                     <ul className="grid grid-cols-2 gap-x-3 gap-y-3 lg:flex lg:flex-col lg:gap-2">
-                        <li className="flex flex-col flex-wrap gap-1 lg:gap-2 lg:flex-col ">
-                            <span className="text-[0.5rem] lg:text-[0.6rem] font-semibold">Strengths: </span>
+                        <li className="flex flex-col flex-wrap gap-[2px] sm:gap-1 lg:gap-2 lg:flex-col ">
+                            <span className="text-[0.45rem] sm:text-[0.5rem] lg:text-[0.6rem] pl-[1px] lg:pl-0">Strengths: </span>
                             <div className="grid grid-cols-3 items-center justify-center gap-1 md:gap-x-3 md:gap-y-2">
                                 {
                                     createStatsArray(
@@ -131,8 +131,8 @@ export default function Info({
 
 
                         </li>
-                        <li className="flex flex-col flex-wrap gap-1 lg:gap-2 lg:flex-col">
-                            <span className="text-[0.5rem] lg:text-[0.6rem] font-semibold">Weakness: </span>
+                        <li className="flex flex-col flex-wrap gap-[2px] sm:gap-1 lg:gap-2 lg:flex-col">
+                            <span className="text-[0.45rem] sm:text-[0.5rem]  lg:text-[0.6rem] pl-[1px] lg:pl-0">Weakness: </span>
                             <div className="grid grid-cols-3 items-center justify-center gap-1 md:gap-x-3 md:gap-y-2">
                                 {
                                     createStatsArray(
@@ -150,8 +150,8 @@ export default function Info({
 
 
                         </li>
-                        <li className="flex flex-col flex-wrap gap-1 lg:gap-2 lg:flex-col">
-                            <span className="text-[0.5rem] lg:text-[0.6rem] font-semibold">Resistant: </span>
+                        <li className="flex flex-col flex-wrap gap-[2px] sm:gap-1 lg:gap-2 lg:flex-col">
+                            <span className="text-[0.45rem] sm:text-[0.5rem]  lg:text-[0.6rem] pl-[1px] lg:pl-0">Resistant: </span>
                             <div className="grid grid-cols-3 items-center justify-center gap-1 md:gap-x-3 md:gap-y-2">
                                 {
                                     createStatsArray(
@@ -169,8 +169,8 @@ export default function Info({
 
 
                         </li>
-                        <li className="flex flex-col flex-wrap gap-1 lg:gap-2 lg:flex-col">
-                            <span className="text-[0.5rem] lg:text-[0.6rem] font-semibold">Vulnerable: </span>
+                        <li className="flex flex-col flex-wrap gap-[2px] sm:gap-1 lg:gap-2 lg:flex-col">
+                            <span className="text-[0.45rem] sm:text-[0.5rem]  lg:text-[0.6rem] pl-[1px] lg:pl-0">Vulnerable: </span>
                             <div className="grid grid-cols-3 items-center justify-center gap-1 md:gap-x-3 md:gap-y-2">
                                 {
                                     createStatsArray(
@@ -192,7 +192,7 @@ export default function Info({
                 }
                 <button
                     onClick={() => dispatch(addPokemonToList(data!))}
-                    className="hidden md:flex add-pokemon absolute -bottom-6 right-0 border border-[var(--accent-color)] p-2 bg-secondary"
+                    className="hidden md:flex add-pokemon absolute -bottom-6 right-0 border border-[var(--accent-color)] p-2 bg-secondary md:hover:bg-slate-800"
                 >
                     Add Pokemon
                 </button>

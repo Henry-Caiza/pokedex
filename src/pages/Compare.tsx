@@ -12,8 +12,8 @@ function Compare() {
     //console.log(compareQueue[0]);
 
     return (
-        <div className='compare flex flex-col sm:grid sm:grid-cols-[49%_2%_49%] h-full w-full px-4  max-sm:row-star-1 max-sm:row-end-1 relative pt-16 sm:pt-2'>
-            <div className='flex sm:hidden w-full justify-between absolute top-0 pr-4'>
+        <div className='compare flex flex-col sm:grid sm:grid-cols-[49%_2%_49%] h-full w-full px-2 md:px4  max-sm:row-star-1 max-sm:row-end-1 relative pt-16 sm:pt-2'>
+            <div className='flex sm:hidden w-full justify-between absolute top-0'>
                 <button
                     className=' z-50 '
                     onClick={() => navigate(-1)}

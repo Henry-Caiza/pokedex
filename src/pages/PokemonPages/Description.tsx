@@ -19,7 +19,7 @@ function Description() {
     return (
         <div className="w-full h-full relative">
             <Info data={pokemonData} />
-            {pokemonData && <PokemonContainer image={pokemonData.image} />}
+            {pokemonData && <PokemonContainer data={pokemonData} />}
         </div>
     )
 }

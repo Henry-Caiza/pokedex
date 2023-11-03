@@ -37,7 +37,7 @@ function Footer() {
         // <footer className='grid grid-cols-[5rem_auto_5rem] border-t-[0.5px] border-slate-800'>
         <footer className='w-full mt-1 footer-path bg-slate-600 h-full'>
             <div className="data w-[99.8%] h-[99%] mt-[1px] mx-auto footer-path border-slate-800 bg-secondary flex items-center">
-                <ul className='w-full grid grid-cols-4 gap-1 sm:gap-4 lg:gap-12 px-8 sm:px-20 lg:px-40 md:pb-8 lg:pb-0'>
+                <ul className='w-full grid grid-cols-4 gap-1 sm:gap-4 lg:gap-12 px-8 sm:px-20 lg:px-40 md:pb-8 lg:pb-1'>
                     {routes.map((route) => {
                         return (
                             <li
