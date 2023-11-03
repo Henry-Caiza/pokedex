@@ -1,13 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Codystar:wght@300;400&family=Comfortaa:wght@300;400&family=DM+Sans:wght@400;500;700&family=Monoton&family=Montserrat:wght@400;500;600&family=Press+Start+2P&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    font-family: "Press Start 2P", sans-serif;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.border-item-nav {
+
+    border-radius: 40% 400px 40% 40% / 100% 200% 100% 100%;
+}
+
+.toast {
+    color: white;
+    font-family: roboto;
+    font-size: 1rem;
+    padding: 1rem;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    background: linear-gradient(#242424, #242424) padding-box,
+        linear-gradient(to right, #19A1BE, #7D4192) border-box;
+
+    border: 2px solid transparent;
+    filter: drop-shadow(0 0 0.5rem #494949);
+}
+
+.footer-path {
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+
+    /* filter: drop-shadow(-5px -21px 2px #ffffff); */
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddaff12f;
+    ;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#16c9f1b8, #da76ffa8);
+    border-radius: 4px;
+}
+
+progress {
+    transition: 2s ease-in-out;
+    width: 0;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.bug {
+    background-color: #aaee33;
+}
+
+.Bug {
+    border: .5px solid #aaee33;
+}
+
+.dark {
+    background-color: #334466;
+}
+
+.Dark {
+    border: .5px solid #334466;
+}
+
+.dragon {
+    background-color: #1144aa;
+}
+
+.Dragon {
+    border: .5px solid #1144aa;
+}
+
+.electric {
+    background-color: #ffdd11;
+}
+
+.Electric {
+    border: .5px solid #ffdd11;
+}
+
+.fairy {
+    background-color: #ff88bb;
+}
+
+.Fairy {
+    border: .5px solid #ff88bb;
+}
+
+.fighting {
+    background-color: #bb1122;
+}
+
+.Fighting {
+    border: .5px solid #bb1122;
+}
+
+.fire {
+    background-color: #ff6611;
+}
+
+.Fire {
+    border: .5px solid #ff6611;
+}
+
+.flying {
+    background-color: #ccbbff;
+}
+
+.Flying {
+    border: .5px solid #ccbbff;
+}
+
+.ghost {
+    background-color: #663388;
+}
+
+.Ghost {
+    border: .5px solid #663388;
+}
+
+.grass {
+    background-color: #11cc33;
+
+}
+
+.Grass {
+    border: .5px solid #11cc33;
+}
+
+.ground {
+    background-color: #eebb77;
+}
+
+.Ground {
+    border: .5px solid #eebb77;
+}
+
+.ice {
+    background-color: #33ddff;
+}
+
+.Ice {
+    border: .5px solid #33ddff;
+}
+
+.normal {
+    background-color: #ddddcc;
+}
+
+.Normal {
+    border: .5px solid #ddddcc;
+}
+
+.poison {
+    background-color: #cc22cc;
+}
+
+.Poison {
+    border: .5px solid #cc22cc;
+}
+
+.psychic {
+    background-color: #ff3377;
+}
+
+.Psychic {
+    border: .5px solid #ff3377;
+}
+
+.rock {
+    background-color: #664433;
+}
+
+.Rock {
+    border: .5px solid #664433;
+}
+
+.steel {
+    background-color: #558888;
+}
+
+.Steel {
+    border: .5px solid #558888;
+}
+
+.water {
+    background-color: #3377ff;
+}
+
+.Water {
+    border: .5px solid #3377ff;
+}
+
+progress::-webkit-progress-bar {
+    border-radius: 1rem;
+    height: 0.3rem;
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+}
+
+progress::-webkit-progress-value {
+    border-radius: 1rem;
+    background-color: var(--accent-color);
 }
